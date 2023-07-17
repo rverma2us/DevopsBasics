@@ -30,12 +30,4 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
     publishLocation: 'Container'
-- task: UniversalPackages@0
-  inputs:
-    command: 'publish'
-    publishDirectory: '$(Build.ArtifactStagingDirectory)'
-    feedsToUsePublish: 'internal'
-    vstsFeedPublish: 'a799ecb8-45ce-4e29-b79a-926b9eeaf5b9/bb7151e4-c9c1-4289-bca7-c2d7e6fc2b81'
-    vstsFeedPackagePublish: 'warfile'
-    versionOption: 'minor'
     
