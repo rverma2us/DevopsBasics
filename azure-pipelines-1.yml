@@ -30,4 +30,11 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
     publishLocation: 'Container'
+- task: WindowsMachineFileCopy@2
+  inputs:
+    SourcePath: '$(build.artifactstagingdirectory)/*.war'
+    MachineNames: '10VA-CHP00772.ad.btmna.com'
+    AdminUserName: 'n323865'
+    AdminPassword: 'Atiksh+1605'
+    TargetPath: 'D:\'
     
