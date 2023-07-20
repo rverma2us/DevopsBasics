@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
   
 
 steps:
@@ -30,11 +30,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
     publishLocation: 'Container'
-- task: RemoteCopy@1
-  inputs:
-    RemoteComputer: '10.171.184.221'
-    UserName: 'n323865'
-    Password: 'Atiksh+1605'
-    Source: '$(Build.ArtifactStagingDirectory)'
-    Destination: 'U:\'
-    
