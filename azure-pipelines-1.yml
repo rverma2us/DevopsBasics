@@ -33,7 +33,7 @@ steps:
 - task: WindowsMachineFileCopy@2
   inputs:
     SourcePath: '$(Build.ArtifactStagingDirectory)'
-    MachineNames: '10.171.184.221'
+    MachineNames: '10VA-CHP00772.ad.btmna.com'
     AdminUserName: 'n323865'
     AdminPassword: 'Atiksh+1605'
     TargetPath: 'U:\'
